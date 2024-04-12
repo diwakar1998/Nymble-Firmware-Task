@@ -10,3 +10,5 @@
 4. After the entire text data set has been transferred from the PC to the MCU, the MCU starts retrieving the stored data from EEPROM and sends it to the PC. 
 5. On the PC side, your code needs to print the data being received on the console screen of PC.
 6. **During any transmission of data to and from the PC, the console needs to print the live real-time data transmission speed in bits/second.** Do not source it from the baud rate. That is an incorrect approach. See the actual number of bits travelling on the UART bus per second.
+
+The repo contains my implementation of the above task. The EEPROM part is still pending but the uart transmission and receiving to and from PC are completed.
