@@ -1,14 +1,10 @@
-*“Finance Minister Arun Jaitley Tuesday hit out at former RBI governor Raghuram Rajan for predicting that the next banking crisis would be triggered by MSME lending, saying postmortem is easier than taking action when it was required. Rajan, who had as the chief economist at IMF warned of impending financial crisis of 2008, in a note to a parliamentary committee warned against ambitious credit targets and loan waivers, saying that they could be the sources of next banking crisis. Government should focus on sources of the next crisis, not just the last one.* 
+The repo contains my implementation of the firmware task. https://nymblelabs.notion.site/Firmware-Task-5177116a6cb94643871d8cf39c1f345f
 
-*In particular, government should refrain from setting ambitious credit targets or waiving loans. Credit targets are sometimes achieved by abandoning appropriate due diligence, creating the environment for future NPAs," Rajan said in the note." Both MUDRA loans as well as the Kisan Credit Card, while popular, have to be examined more closely for potential credit risk. Rajan, who was RBI governor for three years till September 2016, is currently."*
+main.c :
+Firmware for the controller. Receives the message sent from PC. After receiving is completed is able to transmit the message back to the PC via uart.
+This file is part of stm32 project. In order to see the code work create a stm32 project and setup all the required pins.
 
-### Details:
+uart.py:
+Pc side code is written using pyserial. Message is transmitted and received. During transmission and reception the speed of data transfer is printed on the console.
 
-1. The above text consists of close to 1000 characters (including spaces) which can be represented as 1000 bytes. 
-2. This data needs to be sent from your PC to an MCU by UART (2400 baud rate). 
-3. Upon receiving this data, the MCU stores it in the EEPROM memory as and when it is receiving data. Not all at once.
-4. After the entire text data set has been transferred from the PC to the MCU, the MCU starts retrieving the stored data from EEPROM and sends it to the PC. 
-5. On the PC side, your code needs to print the data being received on the console screen of PC.
-6. **During any transmission of data to and from the PC, the console needs to print the live real-time data transmission speed in bits/second.** Do not source it from the baud rate. That is an incorrect approach. See the actual number of bits travelling on the UART bus per second.
-
-The repo contains my implementation of the above task. The EEPROM part is still pending but the uart transmission and receiving to and from PC are completed.
+*The EEPROM part is still pending but the uart transmission and receiving to and from PC are completed.
