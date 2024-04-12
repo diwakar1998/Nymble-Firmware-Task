@@ -1,4 +1,4 @@
-The repo contains my implementation of the firmware task. https://nymblelabs.notion.site/Firmware-Task-5177116a6cb94643871d8cf39c1f345f
+The repo contains implementation of the firmware task. https://nymblelabs.notion.site/Firmware-Task-5177116a6cb94643871d8cf39c1f345f
 
 main.c :
 Firmware for the controller. Receives the message sent from PC. After receiving is completed is able to transmit the message back to the PC via uart.
